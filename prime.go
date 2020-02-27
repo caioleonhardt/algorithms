@@ -16,6 +16,10 @@ func isPrime(n int64) bool {
 		return true
 	}
 
+	if n%2 == 0 {
+		return false
+	}
+
 	sqr := math.Sqrt(float64(n))
 
 	for i := int64(3); i <= int64(sqr); i += 2 {

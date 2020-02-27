@@ -11,6 +11,8 @@ func TestIsPrime(t *testing.T) {
 		{"non negative small", 1, false},
 		{"negative", -1, false},
 		{"first prime", 2, true},
+		{"even non prime", 10, false},
+		{"odd non prime", 45, false},
 		{"small prime", 17, true},
 		{"medium prime", 1217, true},
 		{"big prime", 100003679, true},
